@@ -303,6 +303,15 @@ template {
 [hidden] {
   display: none; }
 
+.button {
+  padding: 13px 20px;
+  border: none;
+  border-radius: 2px;
+  text-transform: uppercase; }
+  .button--primary {
+    background-color: #E3B873;
+    color: #FFFFFF; }
+
 .header {
   background-color: #131313;
   padding: 24px 0; }
@@ -325,11 +334,6 @@ template {
 .container {
   max-width: 1256px;
   margin: auto; }
-
-.button {
-  margin: 13px 20px;
-  border: none;
-  border-radius: 2px; }
 
 body {
   font-family: sans-serif;
