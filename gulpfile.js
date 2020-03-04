@@ -28,9 +28,9 @@ function minCSS() {
 }
 
 function serveSass() {
-  return src("./scss/*.scss")
+  return src("./sass/*.sass")
     .pipe(sass())
-    .pipe(dest("app/css"))
+    .pipe(dest("./css"))
     .pipe(browserSync.stream());
 }
 
