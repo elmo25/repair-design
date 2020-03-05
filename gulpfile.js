@@ -34,7 +34,7 @@ function serveSass() {
     .pipe(sass())
     .pipe(
       autoprefixer({
-        browsers: ["last 4 versions"]
+        overridebrowsers: ["last 4 versions"]
       })
     )
     .pipe(dest("./css"))
