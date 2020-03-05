@@ -349,7 +349,8 @@ template {
   .header .nav__item {
     text-decoration: none;
     color: #FFFFFF;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    margin-right: 40px; }
   .header .phone {
     color: #E3B873; }
   .header .contacts__phone {
