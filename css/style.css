@@ -382,6 +382,9 @@ template {
   max-width: 1256px;
   margin: auto; }
 
+*, *:before, *:after {
+  box-sizing: border-box; }
+
 body {
   font-family: "Futura Book", sans-serif;
   font-size: 14px; }
