@@ -328,6 +328,11 @@ template {
     color: #FFFFFF; }
 
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
   background-color: #131313;
   padding: 24px 0; }
   .header .menu {
@@ -348,6 +353,7 @@ template {
 
 .hero {
   position: relative;
+  padding-top: 100px;
   background: #131313 url("../image/hero-bg.jpg") no-repeat center/cover;
   height: 100vh;
   color: #FFFFFF; }
