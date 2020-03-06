@@ -54,6 +54,7 @@ h1 {
  * 2. Show the overflow in Edge and IE.
  */
 hr {
+  -webkit-box-sizing: content-box;
   box-sizing: content-box;
   /* 1 */
   height: 0;
@@ -89,7 +90,7 @@ abbr[title] {
   text-decoration: underline;
   /* 2 */
   -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
+  text-decoration: underline dotted;
   /* 2 */ }
 
 /**
@@ -221,6 +222,7 @@ fieldset {
  *    `fieldset` elements in all browsers.
  */
 legend {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   /* 1 */
   color: inherit;
@@ -252,6 +254,7 @@ textarea {
  */
 [type="checkbox"],
 [type="radio"] {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   /* 1 */
   padding: 0;
@@ -322,10 +325,21 @@ template {
   padding: 13px 20px;
   border: none;
   border-radius: 2px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  cursor: pointer; }
   .button--primary {
     background-color: #E3B873;
-    color: #FFFFFF; }
+    color: #FFFFFF;
+    -webkit-box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+    -webkit-transition: -webkit-box-shadow 0.3s;
+    transition: -webkit-box-shadow 0.3s;
+    -o-transition: box-shadow 0.3s;
+    transition: box-shadow 0.3s;
+    transition: box-shadow 0.3s, -webkit-box-shadow 0.3s; }
+    .button--primary:hover {
+      -webkit-box-shadow: none;
+      box-shadow: none; }
   .button--outline {
     border: 1px solid #FFFFFF;
     background-color: transparent;
@@ -340,8 +354,14 @@ template {
   background-color: #131313;
   padding: 24px 0; }
   .header .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center; }
   .header .logo {
     color: #E3B873;
@@ -350,7 +370,12 @@ template {
     text-decoration: none;
     color: #FFFFFF;
     text-transform: uppercase;
-    margin-right: 40px; }
+    margin-right: 40px;
+    -webkit-transition: color 0.2s;
+    -o-transition: color 0.2s;
+    transition: color 0.2s; }
+    .header .nav__item:hover {
+      color: #E3B873; }
   .header .phone {
     color: #E3B873; }
   .header .contacts__phone {
@@ -358,15 +383,31 @@ template {
 
 .hero {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
   align-items: flex-start;
   padding-top: 100px;
   background: #131313 url("../image/hero-bg.jpg") no-repeat center/cover;
   height: 100vh;
   color: #FFFFFF; }
+  .hero::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(19, 19, 19, 0.7); }
   .hero__content {
+    position: relative;
     max-width: 670px; }
   .hero__text {
     font-size: 22px;
@@ -381,8 +422,14 @@ template {
     height: 100%; }
   .hero__scroll-down {
     position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     left: 0;
     bottom: 0;
@@ -391,17 +438,46 @@ template {
     background-color: #131313;
     color: #FFFFFF;
     text-decoration: none; }
+    .hero__scroll-down::after {
+      content: '';
+      background: url("../image/icons/arrow-down.svg") no-repeat center;
+      width: 30px;
+      height: 30px;
+      border: 2px solid #E3B873;
+      border-radius: 50%;
+      margin-left: 12px; }
 
 .instagram {
   background-color: #131313;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center; }
   .instagram__link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
     text-transform: uppercase;
     color: #E3B873;
     text-decoration: none;
-    transform: rotate(90deg); }
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    line-height: 0.8; }
+    .instagram__link::after {
+      content: '';
+      width: 50px;
+      height: 1px;
+      background-color: #E3B873;
+      margin-left: 8px; }
 
 .title {
   margin: 0;
@@ -416,7 +492,8 @@ template {
   max-width: 1256px;
   margin: auto; }
 
-*, *:before, *:after {
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
 body {
