@@ -569,16 +569,20 @@ body {
   .contacts__button {
     display: none; }
   .title {
-    font-size: 1.64rem; }
+    font-size: 1.64rem;
+    margin-left: -0.7rem; }
   .hero__content {
-    max-width: 22.86rem; }
+    max-width: 31.25rem; }
   .hero__text {
     font-size: 1.29rem;
-    margin-bottom: 2.28rem; }
+    margin-bottom: 2.28rem;
+    margin-left: -0.7rem;
+    max-width: 23rem; }
   .hero__button {
     display: block;
-    min-width: 22.86rem;
-    margin-bottom: 1.85rem; }
+    min-width: 28.217rem;
+    margin-bottom: 1.85rem;
+    margin-left: -0.93rem; }
   .hero__scroll-down {
     display: none; } }
 
