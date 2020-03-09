@@ -6,32 +6,24 @@
   z-index: 99
   background-color: $dark
   padding: 24px 0
-  .menu
-    display: flex
-    justify-content: space-between
-    align-items: center
-  
-  
-  
-  .logo
-    color: $primary
+.menu
+  display: flex
+  justify-content: space-between
+  align-items: center
+.logo
+  color: $primary
+  text-transform: uppercase
+.nav
+  &__item
+    text-decoration: none
+    color: $light
     text-transform: uppercase
-
-  .nav
-    &__item
-      text-decoration: none
-      color: $light
-      text-transform: uppercase
-      margin-right: 40px
-      transition: color 0.2s
-      &:hover
-        color: $primary
-      
-      
-  
-  .phone
-    color: $primary
-
-  .contacts
-    &__phone
-      margin-right: 45px
+    margin-right: 2.85rem
+    transition: color 0.2s
+    &:hover
+      color: $primary
+.phone
+  color: $primary
+.contacts
+  &__phone
+    margin-right: 3.214rem
