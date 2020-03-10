@@ -600,6 +600,23 @@ img {
   color: #FFFFFF;
   padding: 1.214rem 2.6rem; }
 
+.discription {
+  text-align: center;
+  max-width: 52.928rem;
+  line-height: 1.928rem;
+  font-family: FuturaBookC;
+  font-size: 1.428rem;
+  color: #363636; }
+
+.design__discription {
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 1rem;
+  margin-bottom: 3rem; }
+
+.design--pricetag {
+  padding: 1.124rem 5rem 1.124rem 2.142rem; }
+
 .container {
   width: 85%;
   max-width: 1256px;
@@ -629,9 +646,20 @@ img {
     -ms-flex-align: center;
     align-items: center; }
   .types__card {
-    margin-bottom: 5rem; }
+    margin-bottom: 7rem; }
   .card__text {
-    margin-left: 0; } }
+    margin-left: 0; }
+  .design {
+    background-color: #131313; }
+    .design__section-title {
+      color: #FFFFFF; }
+    .design__discription {
+      color: #FFFFFF;
+      max-width: 30.5rem;
+      font-size: 1.25rem;
+      line-height: 135.84%;
+      letter-spacing: normal;
+      text-align: center; } }
 
 @media screen and (max-width: 570px) {
   .contacts__phone {
