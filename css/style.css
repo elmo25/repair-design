@@ -347,6 +347,51 @@ template {
     background-color: transparent;
     color: #FFFFFF; }
 
+.label {
+  font-size: 1.07rem; }
+  .label--light {
+    color: rgba(255, 255, 255, 0.5); }
+
+.input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+  font-size: 1.285rem;
+  color: #FFFFFF;
+  padding: 0.5rem 0; }
+  .input::-webkit-input-placeholder {
+    color: #FFFFFF; }
+  .input::-moz-placeholder {
+    color: #FFFFFF; }
+  .input:-ms-input-placeholder {
+    color: #FFFFFF; }
+  .input::-ms-input-placeholder {
+    color: #FFFFFF; }
+  .input::placeholder {
+    color: #FFFFFF; }
+
+.policy__checkbox {
+  opacity: 0;
+  visibility: hidden; }
+  .policy__checkbox:checked + .policy__label::before {
+    background: #E3B873 url(../image/icons/check.svg) no-repeat center/0.8rem; }
+
+.policy__label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .policy__label::before {
+    content: '';
+    width: 18px;
+    height: 18px;
+    border: 1px solid #E3B873;
+    border-radius: 1px;
+    cursor: pointer;
+    margin-right: 0.64rem; }
+
 *, *::before, *::after {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
@@ -617,6 +662,65 @@ img {
 
 .design--pricetag {
   padding: 1.124rem 5rem 1.124rem 2.142rem; }
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(19, 19, 19, 0.6);
+  z-index: 199;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .modal__dialog {
+    position: relative;
+    max-width: 36.36rem;
+    background: #131313 url(../image/bg-lines.svg) no-repeat center;
+    padding: 2.357rem 3.5rem 1.928rem;
+    color: #FFFFFF; }
+  .modal__close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 28px;
+    height: 28px;
+    background: transparent url(..//image/icons/close.svg) no-repeat center;
+    border: none;
+    margin: 12px;
+    cursor: pointer; }
+  .modal__title {
+    font-family: 'Yeseva One', cursive;
+    font-size: 1.357rem;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 2.428rem; }
+  .modal__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .modal__input {
+    margin-bottom: 3.428rem; }
+    .modal__input:last-of-type {
+      margin-bottom: 1rem; }
+  .modal__policy {
+    margin-bottom: 2.7rem; }
+  .modal__button {
+    -ms-flex-item-align: end;
+    align-self: flex-end; }
 
 .container {
   width: 85%;
