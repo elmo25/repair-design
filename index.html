@@ -28,7 +28,10 @@
             <a href="tel:+79997683299" class="phone contacts__phone"
               >+7 (999) 768-32-99</a
             >
-            <button class="button contacts__button button--primary">
+            <button
+              class="button contacts__button button--primary"
+              data-toggle="modal"
+            >
               Заказать звонок
             </button>
           </div>
@@ -56,6 +59,7 @@
             </p>
             <button
               class="button hero__button button--primary hero__button--primary"
+              data-toggle="modal"
             >
               Рассчитать стоимость
             </button>
@@ -273,7 +277,7 @@
         <!-- /.container -->
       </section>
     </main>
-    <div class="modal">
+    <div class="modal ">
       <div class="modal__dialog">
         <button class="modal__close"></button>
         <h3 class="modal__title">
@@ -329,5 +333,6 @@
       <!-- /.modal__dialog -->
     </div>
     <!-- /.modal -->
+    <script src="js/main.js"></script>
   </body>
 </html>
