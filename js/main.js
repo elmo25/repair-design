@@ -12,22 +12,17 @@ document.addEventListener("DOMContentLoaded", function(event) {
   closeBtn.addEventListener("click", switchModal);
   //закрыть по крестику
 
-  modal.addEventListener("click", function() {
-    document.querySelector(".modal").classList.remove("modal--visible");
-    this.classList.remove("modal--visible");
+  document.addEventListener("keyup", e => {
+    const key = e.keyCode;
+    if (key == 27) {
+      document.querySelector(".modal").classList.remove("modal--visible");
+    }
   });
-  //закрыть по клику на фон
-
-  document.body.addEventListener(
-    "keyup",
-    function(e) {
-      var key = e.keyCode;
-
-      if (key == 27) {
-        document.querySelector(".modal").classList.remove("modal--visible");
-      }
-    },
-    false
-  );
   //закрыть при нажатии esc
+  document.addEventListener("click", e => {
+    if (e.target == modal) {
+      modal.classList.remove("modal--visible");
+    }
+  });
+  //закрыть по клику вне окна
 });
