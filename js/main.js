@@ -79,19 +79,19 @@ $(document).ready(function() {
   bullets.css("left", prev.width() + 10);
 
   $(".left-item").on("click", function() {
-    $(".left-item").removeClass("--active");
-    $(this).addClass("--active");
+    $(".left-item").removeClass("active");
+    $(this).addClass("active");
     const e = $(this).data("index");
     steps.slideTo(e);
   });
   steps.on("slideChange", function() {
-    let e = steps.activeIndex - 0;
-    if (e === 5) {
+    let e = steps.activeIndex - 1;
+    if (e === 6) {
       e = 0;
     }
-    $(".left-item").removeClass("--active");
+    $(".left-item").removeClass("active");
     $(".left-item")
       .eq(e)
-      .addClass("--active");
+      .addClass("active");
   });
 });
