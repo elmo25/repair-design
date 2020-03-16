@@ -64,7 +64,8 @@ $(document).ready(function() {
 
     pagination: {
       el: ".steps__swiper-pagination",
-      type: "bullets"
+      type: "bullets",
+      clickable: true
     },
     navigation: {
       nextEl: ".steps__swiper-button-next",

@@ -976,16 +976,12 @@ img {
     min-width: 28.217rem;
     margin-bottom: 1.85rem;
     margin-left: -0.93rem; }
-  .swiper-slide {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
-    .swiper-slide__image {
-      -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-      order: 1; }
-  .swiper__scroll-down {
-    display: none; } }
+  .col-100 {
+    width: 100%; }
+  .col-50 {
+    margin-bottom: 2rem; }
+    .col-50__scroll-down {
+      display: none; } }
 
 @media screen and (max-height: 520px) {
   .hero__scroll-down {
