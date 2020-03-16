@@ -855,6 +855,9 @@ img {
   -ms-flex-align: center;
   align-items: center; }
 
+.left__swiper-container {
+  margin: 0; }
+
 .left-item {
   display: -webkit-box;
   display: -ms-flexbox;

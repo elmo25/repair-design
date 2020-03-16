@@ -39,21 +39,21 @@ $(document).ready(function() {
       modal.toggleClass("modal--visible");
     }
   });
-  var mySwiper = new Swiper(".swiper-container", {
+  var mySwiper = new Swiper(".projects__swiper-container", {
     // Optional parameters
     loop: true,
     pagination: {
-      el: ".swiper-pagination",
+      el: ".projects__swiper-pagination",
       type: "bullets"
     },
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev"
+      nextEl: ".projects__swiper-button-next",
+      prevEl: ".projects__swiper-button-prev"
     }
   });
-  var next = $(".swiper-button-next");
-  var prev = $(".swiper-button-prev");
-  var bullets = $(".swiper-pagination");
+  var next = $(".projects__swiper-button-next");
+  var prev = $(".projects__swiper-button-prev");
+  var bullets = $(".projects__swiper-pagination");
 
   next.css("left", prev.width() + 10 + bullets.width() + 10);
   bullets.css("left", prev.width() + 10);
@@ -83,8 +83,10 @@ $(document).ready(function() {
     $(".left-item").removeClass("active");
     $(this).addClass("active");
     const e = $(this).data("index");
-    steps.slideTo(e);
+    steps[0].slideTo(e);
+    steps[1].slideTo(e);
   });
+
   steps.on("slideChange", function() {
     let e = steps.activeIndex - 1;
     if (e === 6) {
