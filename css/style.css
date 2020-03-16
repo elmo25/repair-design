@@ -986,8 +986,10 @@ img {
     width: 100%; }
   .col-50 {
     margin-bottom: 2rem; }
-    .col-50__scroll-down {
-      display: none; } }
+  .left-item {
+    display: none; }
+  .left__scroll-down {
+    display: none; } }
 
 @media screen and (max-height: 520px) {
   .hero__scroll-down {

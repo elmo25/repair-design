@@ -85,10 +85,20 @@ $(document).ready(function() {
     const e = $(this).data("index");
     steps[0].slideTo(e);
     steps[1].slideTo(e);
+    steps.on("slideChange", function() {
+      const e = steps[0].activeIndex - 1;
+      if (e === 6) {
+        e = 0;
+      }
+      $(".left-item").removeClass("active");
+      $(".left-item")
+        .eq(e)
+        .addClass("active");
+    });
   });
 
-  steps.on("slideChange", function() {
-    let e = steps.activeIndex - 1;
+  steps[0].on("slideChange", function() {
+    let e = steps[0].activeIndex - 1;
     if (e === 6) {
       e = 0;
     }
