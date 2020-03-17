@@ -205,9 +205,11 @@
         <!-- /.container -->
       </section>
       <!--project-->
-      <section class="section control">
+      <section class="section control col-100">
         <div class="container">
-          <div class="section-title">
+          <div
+            class="section-title control__section-title section-title--light"
+          >
             <h2 class="section-title__heading">онлайн контроль</h2>
             <!--section-title__heading-->
             <div class="section-title__image">
@@ -215,6 +217,69 @@
             </div>
             <!--section-title__image-->
           </div>
+          <div class="control__video video">
+            <img
+              src="image/icons/video-play.svg"
+              alt="play"
+              class="video__play"
+            />
+          </div>
+          <!--control-video-->
+          <p class="control__text">
+            На каждом объекте установлена ​​камера, которая транслирует ход
+            работы на часах. В любой момент вы можете зайти на наш сайт и
+            следить за ходом работы в вашей квартире. Посмотрите прямую
+            трансляцию с одного из наших объектов! Оставьте заявку ниже чтобы
+            получить ссылку на трансляцию.
+          </p>
+          <form action="#" class="form control__form">
+            <div class="control__input-group">
+              <label
+                for="user-name"
+                class="label form__label label control__label"
+                >Имя</label
+              >
+              <input
+                type="text"
+                class="input form__input control__input"
+                id="user-name"
+                placeholder="Как вас зовут:"
+              />
+            </div>
+
+            <div class="control__input-group">
+              <label
+                for="user-phone"
+                class="label form__label label control__label"
+                >Телефон</label
+              >
+              <input
+                type="tel"
+                class="input form__input control__input"
+                id="user-phone"
+                placeholder="Ваш номер телефона:"
+              />
+            </div>
+
+            <button class="button button--primary control__button">
+              Отправить
+            </button>
+            <div class="policy control__policy">
+              <input
+                type="checkbox"
+                name="policy-checkbox"
+                id="policy-checkbox"
+                class="policy__checkbox"
+                checked
+              />
+              <label
+                for="policy-checkbox"
+                class="policy__label control__policy-label"
+                >Я соглашаюсь с обработкой данных</label
+              >
+            </div>
+            <!--policy-->
+          </form>
         </div>
         <!-- /.container -->
       </section>
@@ -667,7 +732,7 @@
           >
           <input
             type="text"
-            class="input form__input modal__input"
+            class="input form__input modal__input input--light"
             id="user-name"
             placeholder="Как вас зовут:"
           />
@@ -676,7 +741,7 @@
           >
           <input
             type="tel"
-            class="input form__input modal__input"
+            class="input form__input modal__input input--light"
             id="user-phone"
             placeholder="Ваш номер телефона:"
           />
@@ -685,7 +750,7 @@
           >
           <input
             type="email"
-            class="input form__input modal__input"
+            class="input form__input modal__input input--light"
             id="user-email"
             placeholder="Ваш email:"
           />
