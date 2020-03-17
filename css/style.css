@@ -474,6 +474,26 @@ img {
         background-color: #E3B873;
         margin: 0 10px; }
 
+@-webkit-keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%; }
+  to {
+    margin-left: 0%;
+    width: 100%; } }
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%; }
+  to {
+    margin-left: 0%;
+    width: 100%; } }
+
+.slidein {
+  -webkit-animation: slidein 3s;
+  animation: slidein 3s; }
+
 .control__section-title {
   margin-bottom: 2.214rem;
   margin-top: -30rem; }
@@ -504,15 +524,16 @@ img {
   text-align: center;
   font-size: 1.428rem;
   line-height: 2.4rem; }
-  .control__text::before {
-    display: block;
-    content: "";
-    margin: auto;
-    margin-bottom: 2.5rem;
-    width: 55px;
-    height: 2px;
-    background-color: #E3B873;
-    border-radius: 30px; }
+
+.control::before {
+  display: block;
+  content: "";
+  margin: auto;
+  margin-bottom: 2.5rem;
+  width: 55px;
+  height: 2px;
+  background-color: #E3B873;
+  border-radius: 30px; }
 
 .control__form {
   display: -webkit-box;

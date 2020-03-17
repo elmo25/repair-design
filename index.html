@@ -8,6 +8,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css" />
+    <link rel="stylesheet" href="css/animate.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Document</title>
   </head>
@@ -15,7 +16,9 @@
     <header class="header">
       <div class="container">
         <div class="menu">
-          <div class="logo menu__logo">Repair Design Project</div>
+          <div class="logo menu__logo wow fadeInLeft">
+            Repair Design Project
+          </div>
           <nav class="nav menu__nav">
             <a href="#" class="nav__item">Главная</a>
             <a href="#" class="nav__item">Проекты</a>
@@ -48,24 +51,26 @@
         </div>
         <div class="container">
           <div class="hero__content">
-            <h1 class="title hero__title">
+            <h1 class="title hero__title wow fadeInRight" data-wow-delay="0.1s">
               Турецкий ремонт в&nbsp;<span class="title--primary"
                 >Ростове-на-дону</span
               >
             </h1>
-            <p class="hero__text">
+            <p class="hero__text wow fadeInRight" data-wow-delay="0.15s">
               Получите готовый ремонт под ключ в срок с экономией рабочего
               времени до 45 дней и 20% от стоимости материалов за счет
               организации работы
             </p>
             <button
-              class="button hero__button button--primary hero__button--primary"
+              class="button hero__button button--primary hero__button--primary wow fadeInRight"
               data-toggle="modal"
+              data-wow-delay="0.5s"
             >
               Рассчитать стоимость
             </button>
             <button
-              class="button hero__button button--outline hero__button--outline"
+              class="button hero__button button--outline hero__button--outline wow fadeInRight"
+              data-wow-delay="0.5s"
             >
               Отправить заявку
             </button>
@@ -73,7 +78,13 @@
         </div>
         <!--container-->
         <!-- /.hero__content -->
-        <a href="#" class="hero__scroll-down">Листайте вниз</a>
+        <a
+          href="#"
+          class="hero__scroll-down wow bounce "
+          data-wow-iteration="2"
+          data-wow-delay="4s"
+          >Листайте вниз</a
+        >
       </section>
       <!--hero-->
       <section class="section section--dark projects">
@@ -127,7 +138,7 @@
                       <span class="swiper-slide__value">81 м2</span>
                     </div>
                     <div class="swiper-slide__text">
-                      <h3 class="swiper-slide__heading">Срок ремонта:</h3>
+                      <h3 class="swiper-slide__heading ">Срок ремонта:</h3>
                       <span class="swiper-slide__value">3,5 месяца</span>
                     </div>
                     <div class="swiper-slide__text projects__swiper-slide">
@@ -210,9 +221,11 @@
           <div
             class="section-title control__section-title section-title--light"
           >
-            <h2 class="section-title__heading">онлайн контроль</h2>
+            <h2 class="section-title__heading wow fadeInDown">
+              онлайн контроль
+            </h2>
             <!--section-title__heading-->
-            <div class="section-title__image">
+            <div class="section-title__image wow fadeInUp">
               <img src="image/icons/camera-control.svg" alt="картинка" />
             </div>
             <!--section-title__image-->
@@ -296,7 +309,7 @@
           <!--section-title-->
           <div class="row">
             <div class="col-30">
-              <div class="card types__card">
+              <div class="card types__card wow fadeInLeft">
                 <img src="image/type-1.jpg" alt="" class="card__image" />
                 <div class="card__text">
                   <h3 class="card__title">Косметический ремонт</h3>
@@ -320,7 +333,7 @@
             </div>
             <!-- /.col -->
             <div class="col-30">
-              <div class="card types__card">
+              <div class="card types__card wow fadeInDown">
                 <img src="image/type-2.jpg" alt="" class="card__image" />
                 <div class="card__text">
                   <h3 class="card__title">Капитальный ремонт</h3>
@@ -344,7 +357,7 @@
             </div>
             <!-- /.col -->
             <div class="col-30">
-              <div class="card types__card">
+              <div class="card types__card wow fadeInRight">
                 <img src="image/type-3.jpg" alt="" class="card__image" />
                 <div class="card__text">
                   <h3 class="card__title">Дизайнерский ремонт</h3>
@@ -393,7 +406,7 @@
           </div>
           <div class="row">
             <div class="col-30">
-              <div class="card types__card">
+              <div class="card types__card wow fadeInLeft">
                 <img src="image/design-1.jpg" alt="" class="card__image" />
                 <div class="card__text">
                   <h3 class="card__title">Минимальный</h3>
@@ -414,7 +427,7 @@
             </div>
             <!-- /.col -->
             <div class="col-30">
-              <div class="card types__card">
+              <div class="card types__card wow fadeInUp">
                 <img src="image/design-2.jpg" alt="" class="card__image" />
                 <div class="card__text">
                   <h3 class="card__title">Стандартный</h3>
@@ -438,7 +451,7 @@
             </div>
             <!-- /.col -->
             <div class="col-30">
-              <div class="card types__card">
+              <div class="card types__card wow fadeInRight">
                 <img src="image/design-3.jpg" alt="" class="card__image" />
                 <div class="card__text">
                   <h3 class="card__title">Полный</h3>
@@ -474,7 +487,7 @@
       <section class="section section--dark steps">
         <div class="container">
           <div class="row">
-            <div class="col-40 сol-100">
+            <div class="col-40 сol-100 ">
               <div class="section-title section-title--left">
                 <span class="section-title__subtitle">как мы работаем</span>
                 <h2
@@ -488,7 +501,7 @@
                 </h2>
                 <!--section-title__heading-->
               </div>
-              <div class="swiper-container steps__swiper-container">
+              <div class="swiper-container steps__swiper-container ">
                 <!-- Additional required wrapper -->
                 <div
                   class="swiper-wrapper swiper-no-swiping step__swiper-wrapper"
@@ -674,7 +687,7 @@
                 >
                   <!-- Slides -->
                   <div
-                    class="swiper-slide steps__swiper-slide steps__image"
+                    class="swiper-slide steps__swiper-slide steps__image wow fadeInRight"
                     data-swiper-slide-index="0"
                   >
                     <img src="image/steps.jpg" class="left__image" alt="" />
@@ -779,6 +792,7 @@
     <a href="#" class="go-top"></a>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
