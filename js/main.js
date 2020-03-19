@@ -123,13 +123,17 @@ $(document).ready(function() {
   //Валидация формы
   $(".modal__form").validate({
     errorClass: "invalid",
+    errorElement: "div",
     rules: {
       // simple rule, converted to {required:true}
       userName: {
         required: true,
         minlength: 2
       },
-      userPhone: "required",
+      userPhone: {
+        required: true,
+        minlength: 11
+      },
       // compound rule
       userEmail: {
         required: true,
@@ -141,7 +145,10 @@ $(document).ready(function() {
         required: "Имя обязательно",
         minlength: "Не короче двух букв"
       },
-      userPhone: "Телефон обязателен",
+      userPhone: {
+        required: "Заполните поле",
+        minlength: "Должно быть 11 цифр"
+      },
       userEmail: {
         required: "Обязательно укажите email",
         email: "Введите в формате name@domain.com"
@@ -149,9 +156,61 @@ $(document).ready(function() {
     }
   });
 
-  //маска для телефона
+  $(".control__form").validate({
+    errorClass: "invalid",
+    errorElement: "div",
+    rules: {
+      userName: {
+        required: true,
+        minlength: 2,
+        maxlength: 15
+      },
+      userPhone: {
+        required: true,
+        minlength: 11
+      }
+    },
+    messages: {
+      userName: {
+        required: "Заполните поле",
+        minlength: "Имя должно быть не короче двух букв",
+        maxlength: "Имя должно быть не длиннее 15 символов"
+      },
+      userPhone: {
+        required: "Заполните поле",
+        minlength: "Должно быть 11 цифр"
+      }
+    }
+  });
+
   $("[type=tel]").mask("+7(000) 00-00-000", {
     placeholder: "+7(000) 00-00-000"
+  });
+  $(".footer__form").validate({
+    errorClass: "invalid",
+    errorElement: "div",
+    rules: {
+      userName: {
+        required: true,
+        minlength: 2,
+        maxlength: 15
+      },
+      userPhone: {
+        required: true,
+        minlength: 11
+      }
+    },
+    messages: {
+      userName: {
+        required: "Заполните поле",
+        minlength: "Имя должно быть не короче двух букв",
+        maxlength: "Имя должно быть не длиннее 15 символов"
+      },
+      userPhone: {
+        required: "Заполните поле",
+        minlength: "Должно быть 11 цифр"
+      }
+    }
   });
   // map
   ymaps.ready(function() {
