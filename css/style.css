@@ -1102,6 +1102,110 @@ img {
       background-color: #E3B873;
       color: #FFFFFF; }
 
+.our-clients {
+  padding-top: 0.357rem;
+  padding-bottom: 27.357rem; }
+  .our-clients__section-title {
+    margin-bottom: 1.285rem; }
+  .our-clients__heading {
+    margin-bottom: 0.857rem; }
+  .our-clients__text {
+    max-width: 25.714rem;
+    margin: auto;
+    margin-bottom: 3.428rem;
+    text-align: center;
+    font-size: 1.4285rem;
+    line-height: 1.9285rem; }
+  .our-clients__row {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  .our-clients__col {
+    -webkit-box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);
+    background-color: #FFFFFF;
+    padding: 1.714rem 2.285rem 1.928rem 1.428rem; }
+  .our-clients__heading-col {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 1.142rem; }
+  .our-clients__img {
+    width: 5.428rem;
+    height: 5.428rem;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden; }
+    .our-clients__img img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      -o-object-fit: cover;
+      object-fit: cover; }
+  .our-clients__name {
+    width: 14.285rem;
+    font-family: 'Yeseva One', cursive;
+    font-weight: normal;
+    font-size: 1.285rem;
+    line-height: 1.642rem;
+    color: #181818;
+    margin-left: 1.642rem; }
+  .our-clients__review {
+    font-weight: normal;
+    font-size: 1.071rem;
+    line-height: 180%;
+    color: #959595;
+    margin: 0;
+    margin-bottom: 3.357rem; }
+  .our-clients__bottom-col {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 20.928rem;
+    margin-left: -1.428rem;
+    margin-bottom: -3.857rem; }
+    .our-clients__bottom-col--primary {
+      background: #E3B873;
+      -webkit-box-shadow: 5px 5px 20px rgba(227, 184, 115, 0.5);
+      box-shadow: 5px 5px 20px rgba(227, 184, 115, 0.5); }
+
+.bottom-col__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-preferred-size: 9.642rem;
+  flex-basis: 9.642rem;
+  padding: 0.785rem 0.5rem 0.785rem 1.285rem;
+  border-right: 1px solid #FFFFFF; }
+
+.bottom-col__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-preferred-size: 11.357rem;
+  flex-basis: 11.357rem;
+  padding: 0.785rem 0.571rem 0.785rem 1.285rem; }
+
+.bottom-col__text {
+  font-family: 'Yeseva One', cursive;
+  font-weight: normal;
+  font-size: 1.214rem;
+  color: #FFFFFF;
+  margin-left: 1rem; }
+
 .footer {
   background: #131313 url(../image/footer-bg.jpg) no-repeat center/cover;
   padding-top: 3rem; }
@@ -1159,8 +1263,43 @@ img {
     background: #131313;
     padding: 4.285rem 0; }
   .footer__map {
+    max-width: 66.071rem;
+    margin: auto;
     margin-bottom: 4rem;
-    min-height: 465px; }
+    min-height: 33.214rem; }
+  .footer__contacts {
+    max-width: 39.285rem;
+    margin: auto;
+    margin-bottom: 3.142rem; }
+  .footer__address {
+    font-family: 'Yeseva One', cursive;
+    font-weight: normal;
+    font-size: 1.4285rem;
+    line-height: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 1.6rem;
+    color: #E3B873; }
+  .footer__social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+
+.social-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-right: 1rem; }
 
 .container {
   width: 85%;
