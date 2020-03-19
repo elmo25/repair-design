@@ -7,9 +7,9 @@ $userEmail = $_POST['userEmail'];
 
 
 // Load Composer's autoloader
-require 'phpmailer\Exception.php';
-require 'phpmailer\PHPMailer.php';
-require 'phpmailer\SMTP.php';
+require 'phpmailer/PHPMailer.php';
+require 'phpmailer/SMTP.php';
+require 'phpmailer/Exception.php';
 // Instantiation and passing `true` enables exceptions
 $mail = new PHPMailer\PHPMailer\PHPMailer();
 
