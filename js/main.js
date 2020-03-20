@@ -3,6 +3,8 @@ $(document).ready(function() {
     modalBtn = $("[data-toggle=modal]"),
     closeBtn = $(".modal__close"),
     modalDialog = $(".modal__dialog"),
+    modalThx = $(".modal-thanks"),
+    closeThx = $(".modal-thanks__close"),
     button = $(".go-top");
 
   modalBtn.on("click", function(e) {
@@ -10,6 +12,9 @@ $(document).ready(function() {
   });
   closeBtn.on("click", function() {
     modal.toggleClass("modal--visible");
+  });
+  closeThx.on("click", function() {
+    modalThx.toggleClass("modal-thanks--visible");
   });
   $(window).on("scroll", e => {
     if ($(this).scrollTop() >= 50) {
@@ -160,9 +165,9 @@ $(document).ready(function() {
         url: "send.php",
         data: $(form).serialize(),
         success: function(response) {
-          alert("Форма отправлена,мы свяжемся с вами через 10 минут");
           $(form)[0].reset();
           modal.removeClass("modal--visible");
+          modalThx.toggleClass("modal-thanks--visible");
         },
         error: function(response) {
           console.error("Ошибка запроса" + response);
@@ -202,8 +207,9 @@ $(document).ready(function() {
         url: "send.php",
         data: $(form).serialize(),
         success: function(response) {
-          alert("Форма отправлена,мы свяжемся с вами через 10 минут");
           $(form)[0].reset();
+          modal.removeClass("modal--visible");
+          modalThx.toggleClass("modal-thanks--visible");
         },
         error: function(response) {
           console.error("Ошибка запроса" + response);
@@ -246,8 +252,9 @@ $(document).ready(function() {
         url: "send.php",
         data: $(form).serialize(),
         success: function(response) {
-          alert("Форма отправлена,мы свяжемся с вами через 10 минут");
           $(form)[0].reset();
+          modal.removeClass("modal--visible");
+          modalThx.toggleClass("modal-thanks--visible");
         },
         error: function(response) {
           console.error("Ошибка запроса" + response);
