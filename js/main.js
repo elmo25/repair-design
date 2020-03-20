@@ -195,6 +195,20 @@ $(document).ready(function() {
         required: "Заполните поле",
         minlength: "Должно быть 11 цифр"
       }
+    },
+    submitHandler: function(form) {
+      $.ajax({
+        type: "POST",
+        url: "send.php",
+        data: $(form).serialize(),
+        success: function(response) {
+          alert("Форма отправлена,мы свяжемся с вами через 10 минут");
+          $(form)[0].reset();
+        },
+        error: function(response) {
+          console.error("Ошибка запроса" + response);
+        }
+      });
     }
   });
 
@@ -225,6 +239,20 @@ $(document).ready(function() {
         required: "Заполните поле",
         minlength: "Должно быть 11 цифр"
       }
+    },
+    submitHandler: function(form) {
+      $.ajax({
+        type: "POST",
+        url: "send.php",
+        data: $(form).serialize(),
+        success: function(response) {
+          alert("Форма отправлена,мы свяжемся с вами через 10 минут");
+          $(form)[0].reset();
+        },
+        error: function(response) {
+          console.error("Ошибка запроса" + response);
+        }
+      });
     }
   });
   // map
