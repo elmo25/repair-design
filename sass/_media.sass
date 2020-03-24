@@ -81,6 +81,7 @@
     margin-bottom: 8rem
   &__section-title 
     margin-top: 0
+    margin-bottom: 2rem
   &__text
     display: none
   
@@ -116,26 +117,54 @@
 .footer
   background: $dark
   padding-top: 2.714rem
-  &__wrap 
-    width: 100%
-    margin-top: 0
-    background: $dark
+  &__input
+    background-color: transparent
+    border: none
+    border-bottom: 1px solid rgba($light, 0.3)
+    font-size: 1.285rem
+    color: $light
+    padding: 0.5rem 0
+  &__subtitle
+    font-size: 1.28rem
+    max-width: 23rem
+    line-height: 138.6%
+  &__content
     display: flex
     flex-direction: column
+  &__menu
+    visibility: hidden
     margin: 0
-  &__input-group
-    justify-content: start
-    margin-bottom: 4.5rem
-  &__label
-    font-size: 1.2rem
-    line-height: 1.428rem
-    color: rgba($light, 0.5)
-  &__input
-    &::placeholder
-      color: $light
-  &__button
+    padding: 0
+    &__logo
+      display: none
+  &__title
+    font-size: 1.6rem
+    margin-bottom: 4rem
+  &__wrap
     width: 100%
-      
+    background: $dark
+    margin: 0
+    padding: 0
+  &__form
+    display: flex
+    flex-direction: column
+  &__policy
+    margin-top: -1rem
+    &-label
+      justify-content: flex-start
+  &__button
+    flex-basis: 100%
+    margin: 0
+    margin-top: 2rem
+    margin-bottom: 3.28rem
+  .policy
+    &__label
+      &--center
+        justify-content: flex-start
+.ymap-container 
+  width: 100%
+  order: -1
+
   
 @media screen and (max-height: 520px)
   .hero
