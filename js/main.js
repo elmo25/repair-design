@@ -143,6 +143,9 @@ $(document).ready(function() {
       userEmail: {
         required: true,
         email: true
+      },
+      policyCheckbox: {
+        required: true
       }
     },
     messages: {
@@ -157,6 +160,9 @@ $(document).ready(function() {
       userEmail: {
         required: "Обязательно укажите email",
         email: "Введите в формате name@domain.com"
+      },
+      policyCheckbox: {
+        required: "Нужно ваше согласие"
       }
     },
     submitHandler: function(form) {
@@ -188,6 +194,9 @@ $(document).ready(function() {
       userPhone: {
         required: true,
         minlength: 11
+      },
+      policyCheckbox: {
+        required: true
       }
     },
     messages: {
@@ -199,6 +208,9 @@ $(document).ready(function() {
       userPhone: {
         required: "Заполните поле",
         minlength: "Должно быть 11 цифр"
+      },
+      policyCheckbox: {
+        required: "Нужно ваше согласие"
       }
     },
     submitHandler: function(form) {
@@ -233,6 +245,9 @@ $(document).ready(function() {
       userPhone: {
         required: true,
         minlength: 11
+      },
+      policyCheckbox: {
+        required: true
       }
     },
     messages: {
@@ -244,6 +259,9 @@ $(document).ready(function() {
       userPhone: {
         required: "Заполните поле",
         minlength: "Должно быть 11 цифр"
+      },
+      policyCheckbox: {
+        required: "Нужно ваше согласие"
       }
     },
     submitHandler: function(form) {
