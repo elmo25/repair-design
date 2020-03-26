@@ -280,6 +280,108 @@ $(document).ready(function() {
       });
     }
   });
+  $(".footer__form").validate({
+    errorClass: "invalid",
+    errorElement: "div",
+    rules: {
+      userName: {
+        required: true,
+        minlength: 2,
+        maxlength: 15
+      },
+      userPhone: {
+        required: true,
+        minlength: 11
+      },
+      policyCheckbox: {
+        required: true
+      }
+    },
+    messages: {
+      userName: {
+        required: "Заполните поле",
+        minlength: "Имя должно быть не короче двух букв",
+        maxlength: "Имя должно быть не длиннее 15 символов"
+      },
+      userPhone: {
+        required: "Заполните поле",
+        minlength: "Должно быть 11 цифр"
+      },
+      policyCheckbox: {
+        required: "Нужно ваше согласие"
+      }
+    },
+    submitHandler: function(form) {
+      $.ajax({
+        type: "POST",
+        url: "send.php",
+        data: $(form).serialize(),
+        success: function(response) {
+          $(form)[0].reset();
+          modal.removeClass("modal--visible");
+          modalThx.toggleClass("modal-thanks--visible");
+        },
+        error: function(response) {
+          console.error("Ошибка запроса" + response);
+        }
+      });
+    }
+  });
+  $(".info-modal__form").validate({
+    errorClass: "invalid",
+    errorElement: "div",
+    rules: {
+      // simple rule, converted to {required:true}
+      userName: {
+        required: true,
+        minlength: 2
+      },
+      userPhone: {
+        required: true,
+        minlength: 11
+      },
+      // compound rule
+      userEmail: {
+        required: true,
+        email: true
+      },
+      policyCheckbox: {
+        required: true
+      }
+    },
+    messages: {
+      userName: {
+        required: "Имя обязательно",
+        minlength: "Не короче двух букв"
+      },
+      userPhone: {
+        required: "Заполните поле",
+        minlength: "Должно быть 11 цифр"
+      },
+      userEmail: {
+        required: "Обязательно укажите email",
+        email: "Введите в формате name@domain.com"
+      },
+      policyCheckbox: {
+        required: "Нужно ваше согласие"
+      }
+    },
+    submitHandler: function(form) {
+      $.ajax({
+        type: "POST",
+        url: "send.php",
+        data: $(form).serialize(),
+        success: function(response) {
+          $(form)[0].reset();
+          modal.removeClass("modal--visible");
+          modalThx.toggleClass("modal-thanks--visible");
+        },
+        error: function(response) {
+          console.error("Ошибка запроса" + response);
+        }
+      });
+    }
+  });
   // map
   ymaps.ready(function() {
     var myMap = new ymaps.Map(

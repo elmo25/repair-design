@@ -387,6 +387,107 @@
         </div>
         <!--container-->
       </section>
+
+      <section class="section info" id="info">
+        <div class="container">
+          <div class="row info__row">
+            <div class="info-col-60 info-col__img col-60">
+              <img class="info__circle" src="image/info.png" alt="" />
+              <span class="info__text info__text--01"
+                >Наш специалист приедет для замеров вдень контакта или назначит
+                удобную для вас дату</span
+              >
+              <span class="info__text info__text--02">Бесплатный замер</span>
+              <span class="info__text info__text--03"
+                >Бесплатная консультация</span
+              >
+              <span class="info__text info__text--04"
+                >Получите смету расходов и сроки вашего&nbsp;будущего
+                ремонта</span
+              >
+            </div>
+            <div class="col-30 info__col-30">
+              <div class="info-modal ">
+                <h3 class="info-modal__title">
+                  Оставьте заявку на бесплатный выезд&nbsp;замерщика
+                </h3>
+                <form
+                  action="send.php"
+                  method="POST"
+                  class="form info-modal__form"
+                  id="info-form"
+                >
+                  <div class="input-group info-modal__input-group">
+                    <label for="infoName" class="label form__label label--light"
+                      >Имя</label
+                    >
+                    <input
+                      type="text"
+                      class="input form__input info-modal__input input--light"
+                      id="infoName"
+                      name="userName"
+                      placeholder="Как вас зовут:"
+                    />
+                  </div>
+                  <div class="input-group info-modal__input-group">
+                    <label
+                      for="infoPhone"
+                      class="label form__label label--light"
+                      >Телефон</label
+                    >
+                    <input
+                      type="tel"
+                      class="input form__input info-modal__input input--light"
+                      id="infoPhone"
+                      name="userPhone"
+                      placeholder="Ваш телефона:"
+                    />
+                  </div>
+                  <div
+                    class="input-group info-modal__input-group info-modal__input-group--last"
+                  >
+                    <label
+                      for="infoEmail"
+                      class="label form__label label--light"
+                      >Email</label
+                    >
+                    <input
+                      type="email"
+                      class="input form__input info-modal__input input--light"
+                      name="userEmail"
+                      id="infoEmail"
+                      placeholder="Ваш Email"
+                    />
+                  </div>
+                  <div class="policy info-modal__policy">
+                    <input
+                      type="checkbox"
+                      name="policyCheckbox"
+                      class="policy__checkbox"
+                      id="info-modal__policy-checkbox"
+                      checked
+                    />
+                    <label
+                      for="info-modal__policy-checkbox"
+                      class="policy__label"
+                      >Я соглашаюсь с обработкой данных</label
+                    >
+                  </div>
+                  <button class="button info-modal__button button--primary">
+                    Вызвать замерщика
+                  </button>
+                </form>
+              </div>
+              <div class="info-money ">
+                <div class="info-money__box"></div>
+                <p class="info-money__text">
+                  Это поможет сэкономить 10-20% <br />от стоимости материалов
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <section class="section design">
         <div class="container">
           <div class="section-title design__section-title">
@@ -486,106 +587,7 @@
         </div>
         <!-- /.container -->
       </section>
-      <section class="section info" id="info">
-        <div class="container">
-          <div class="row info__row">
-            <div class="info-col-60 info-col__img col-60">
-              <img class="info__circle" src="image/info.png" alt="" />
-              <span class="info__text info__text--01"
-                >Наш специалист приедет для замеров вдень контакта или назначит
-                удобную для вас дату</span
-              >
-              <span class="info__text info__text--02">Бесплатный замер</span>
-              <span class="info__text info__text--03"
-                >Бесплатная консультация</span
-              >
-              <span class="info__text info__text--04"
-                >Получите смету расходов и сроки вашего&nbsp;будущего
-                ремонта</span
-              >
-            </div>
-            <div class="col-30 info__col-30">
-              <div class="info-modal ">
-                <h3 class="info-modal__title">
-                  Оставьте заявку на бесплатный выезд&nbsp;замерщика
-                </h3>
-                <form
-                  action="#"
-                  method="POST"
-                  class="form info-modal__form"
-                  id="info-form"
-                >
-                  <div class="input-group info-modal__input-group">
-                    <label for="infoName" class="label form__label label--light"
-                      >Имя</label
-                    >
-                    <input
-                      type="text"
-                      class="input form__input info-modal__input input--light"
-                      id="infoName"
-                      name="userName"
-                      placeholder="Как вас зовут:"
-                    />
-                  </div>
-                  <div class="input-group info-modal__input-group">
-                    <label
-                      for="infoPhone"
-                      class="label form__label label--light"
-                      >Телефон</label
-                    >
-                    <input
-                      type="tel"
-                      class="input form__input info-modal__input input--light"
-                      id="infoPhone"
-                      name="userPhone"
-                      placeholder="Ваш телефона:"
-                    />
-                  </div>
-                  <div
-                    class="input-group info-modal__input-group info-modal__input-group--last"
-                  >
-                    <label
-                      for="infoEmail"
-                      class="label form__label label--light"
-                      >Email</label
-                    >
-                    <input
-                      type="email"
-                      class="input form__input info-modal__input input--light"
-                      name="userEmail"
-                      id="infoEmail"
-                      placeholder="Ваш Email"
-                    />
-                  </div>
-                  <div class="policy info-modal__policy">
-                    <input
-                      type="checkbox"
-                      name="policyCheckbox"
-                      class="policy__checkbox"
-                      id="info-modal__policy-checkbox"
-                      checked
-                    />
-                    <label
-                      for="info-modal__policy-checkbox"
-                      class="policy__label"
-                      >Я соглашаюсь с обработкой данных</label
-                    >
-                  </div>
-                  <button class="button info-modal__button button--primary">
-                    Вызвать замерщика
-                  </button>
-                </form>
-              </div>
-              <div class="info-money ">
-                <div class="info-money__box"></div>
-                <p class="info-money__text">
-                  Это поможет сэкономить 10-20% <br />от стоимости материалов
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+
       <section class="section section--dark steps" id="steps">
         <div class="container">
           <div class="row">
