@@ -42,4 +42,11 @@ function serveSass() {
     .pipe(browserSync.stream());
 }
 
+function build(done) {
+  src("css/**/**.css")
+    .pipe(cleanCSS({ compatibility: "ie8" }))
+    .pipe(dest("dist/css/"));
+  done();
+}
 exports.serve = bs;
+exports.build = build;
