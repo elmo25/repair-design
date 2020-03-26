@@ -422,6 +422,9 @@ input.invalid {
 html {
   font-size: 14px; }
 
+* {
+  outline: none; }
+
 body {
   font-family: "Futura Book", sans-serif;
   font-size: 1rem; }
@@ -571,13 +574,14 @@ img {
   flex-basis: 30%; }
 
 .control__input {
+  background-color: transparent;
   color: #131313; }
 
 .control__button {
   padding: 1.2857rem 4.7857rem; }
 
 .control__label {
-  margin-bottom: -7px; }
+  margin-bottom: -0.1rem; }
 
 .control__policy {
   -ms-flex-preferred-size: 100%;
