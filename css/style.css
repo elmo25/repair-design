@@ -817,6 +817,7 @@ img {
   color: #363636; }
 
 .design {
+  margin-bottom: -35rem;
   position: relative; }
   .design__discription {
     margin-right: auto;
@@ -828,7 +829,6 @@ img {
 
 .info {
   padding-top: 9.7rem;
-  padding-bottom: 16.7rem;
   position: relative; }
   .info-col__img {
     position: relative;
@@ -1118,6 +1118,7 @@ img {
   bottom: 0; }
 
 .steps {
+  padding-top: 30rem;
   padding-bottom: 30rem; }
   .steps--word::after {
     margin-left: 5rem; }
@@ -1521,7 +1522,8 @@ img {
   .card__text {
     margin-left: 0; }
   .design {
-    background-color: #131313; }
+    background-color: #131313;
+    padding-bottom: 2rem; }
     .design__section-title {
       color: #FFFFFF; }
     .design__discription {
@@ -1530,10 +1532,9 @@ img {
       font-size: 1.25rem;
       line-height: 135.84%;
       letter-spacing: normal;
-      text-align: center; } }
-
-.col-50 {
-  margin-bottom: 2rem; }
+      text-align: center; }
+  .col-50 {
+    margin-bottom: 2rem; } }
 
 @media screen and (max-width: 570px) {
   .contacts__phone {
